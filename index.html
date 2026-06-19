@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vijayadurga Patanjali Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="top-bar">
+    <span>📍 Ayyappa Colony, Phase 3, Dammaiguda, Secunderabad</span>
+    <span>🕒 10 AM - 9 PM (Mon-Sat)</span>
+</div>
+
+<nav>
+
+    <div class="logo">
+        <img src="images/shop/logo.jpg" alt="Store Logo">
+
+        <div class="logo-text">
+            <h1>Vijayadurga Patanjali Store</h1>
+            <p>A Step Towards A Healthy Life</p>
+        </div>
+    </div>
+
+    <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+</nav>
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h4>WELCOME TO</h4>
+
+        <h1>
+            Vijaya Durga <br>
+            Patanjali Store
+        </h1>
+
+        <p>
+            We offer genuine Patanjali products including Ayurvedic medicines,
+            personal care products, groceries, health supplements, juices and
+            wellness products.
+        </p>
+
+        <a href="products.html" class="btn">
+            View Products
+        </a>
+
+    </div>
+
+    <div class="hero-image">
+        <img src="images/shop/hero.jpeg" alt="Store Image">
+    </div>
+
+</section>
+
+<section class="features">
+
+    <div class="feature-box">
+        <h3>100% Genuine</h3>
+        <p>Original Patanjali Products</p>
+    </div>
+
+    <div class="feature-box">
+        <h3>Ayurvedic</h3>
+        <p>Natural Health Products</p>
+    </div>
+
+    <div class="feature-box">
+        <h3>Trusted</h3>
+        <p>Quality Products</p>
+    </div>
+
+    <div class="feature-box">
+        <h3>Local Store</h3>
+        <p>Serving Dammaiguda Area</p>
+    </div>
+
+</section>
+
+<section class="gallery">
+
+    <h2>Our Store Gallery</h2>
+
+    <div class="gallery-grid">
+
+        <img src="C:\Users\Haritha Nagam\Desktop\patanjali\images\shop\image 1.jpg" onclick="openImage(this.src)">
+        <img src="C:\Users\Haritha Nagam\Desktop\patanjali\images\shop\image 2.jpeg" onclick="openImage(this.src)">
+        <img src="C:\Users\Haritha Nagam\Desktop\patanjali\images\shop\image 3.jpeg" onclick="openImage(this.src)">
+        <img src="C:\Users\Haritha Nagam\Desktop\patanjali\images\shop\image 4.jpeg" onclick="openImage(this.src)">
+        <img src="C:\Users\Haritha Nagam\Desktop\patanjali\images\shop\image 5.jpeg" onclick="openImage(this.src)">
+        <img src="C:\Users\Haritha Nagam\Desktop\patanjali\images\shop\image 6.jpg" onclick="openImage(this.src)">
+        <img src="C:\Users\Haritha Nagam\Desktop\patanjali\images\shop\image 7.jpg" onclick="openImage(this.src)">
+        <img src="C:\Users\Haritha Nagam\Desktop\patanjali\images\shop\image 8.jpg" onclick="openImage(this.src)">
+
+    </div>
+
+</section>
+
+<div id="lightbox" class="lightbox" onclick="closeImage()">
+    <span class="close">&times;</span>
+    <img id="lightbox-img" onclick="event.stopPropagation()">
+</div>
+
+<script>
+function openImage(src){
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("lightbox-img").src = src;
+}
+
+function closeImage(){
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+</body>
+</html>
